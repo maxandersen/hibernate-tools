@@ -251,7 +251,7 @@ abstract public class BasicPOJOClass implements POJOClass, MetaAttributeConstant
 
 	private boolean useCompareTo(String javaTypeName) {
 		// Fix for HBX-400
-		if ("BigDecimal".equals(javaTypeName)) {
+		if ("java.math.BigDecimal".equals(javaTypeName)) {
 			return true;
 		} else {
 			return false;
